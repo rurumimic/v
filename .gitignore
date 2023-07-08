@@ -1,0 +1,294 @@
+# Created by https://www.toptal.com/developers/gitignore/api/vim,emacs,linux,macos,windows,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,emacs,linux,macos,windows,visualstudiocode
+
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+/network-security.data
+
+
+### Linux ###
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/vim,emacs,linux,macos,windows,visualstudiocode
+
+# ignore sub-level build binaries and v binary
+*/**/*
+v
+v.exe
+v2
+v2.exe
+vdbg
+vdbg.exe
+!*/
+!*.*
+*.exe
+*.o
+*.so
+.*.c
+*.tmp.c
+*.obj
+*.exp
+*.ilk
+*.pdb
+*.dll
+*.lib
+*.bak
+*.dylib
+a.out
+.noprefix.vrepl_temp
+
+# ignore v build files
+/vc
+/v.c
+/v.*.c
+/v.c.out
+/v_old
+/v_old.exe
+/vold
+/vold.exe
+/vnew
+/vnew.exe
+.vrepl_temp.v
+fns.txt
+.noprefix.vrepl_temp.v
+
+# ignore temp directories
+/temp
+/tmp
+
+# unignore special files without extension
+!.github/PULL_REQUEST_TEMPLATE
+!.editorconfig
+!.gitattributes
+!.gitignore
+!BSDmakefile
+!Dockerfile
+!Dockerfile.alpine
+!Dockerfile.cross
+!LICENSE
+!Makefile
+!GNUmakefile
+
+# ignore editor files
+.idea
+.project
+.classpath
+.c9
+.vs
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/
+*.code-workspace
+*~
+*.swp
+*.swo
+*.swn
+.env
+
+# ignore debugger files
+cachegrind.out.*
+.gdb_history
+*.dSYM
+*.def
+vgcore.*
+
+# ignore system files
+.DS_Store
+._*
+thumbs.db
+/.symlink
+/.bin
+
+_docs
+
+# ignore vs databases
+*.suo
+*.VC.db
+*.rsp
+
+# ignore cmd/tools/.disable_autorecompilation, which some package managers use.
+cmd/tools/.disable_autorecompilation
+
+test.bin
+
+# ignore codespace env
+.venv/
+.direnv/
+shell.nix
+default.nix
+flake.nix
+.envrc
+
+thirdparty/stdatomic/nix/cpp/*.h
+thirdparty/binaryen*
+thirdparty/wabt*
+
+# ignore VLS log
+vls.log
+
+# ignore v2go tmperror files
+*.tmperr
+
+*/**/tmp.*
+
+# ignore Intellij files
+.idea/
+/*.iml
+wasm.v
+
